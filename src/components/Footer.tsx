@@ -5,10 +5,7 @@ export default function Footer() {
         <div className="footer__grid">
           {/* Logo column */}
           <div>
-            <div className="footer__logo-name">Leslie Soriano</div>
-            <div className="footer__logo-sub">
-              Servicios Legales &middot; Gesti&oacute;n Inmobiliaria
-            </div>
+            <img src="/images/logo.png" alt="Leslie Soriano" className="footer__logo-img" />
             <p className="footer__desc">
               Servicios legales especializados y gesti&oacute;n inmobiliaria
               con compromiso, transparencia y excelencia profesional.
