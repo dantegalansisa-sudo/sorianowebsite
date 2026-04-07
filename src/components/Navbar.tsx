@@ -30,7 +30,8 @@ export default function Navbar() {
     >
       <div className="navbar__container">
         <a href="#inicio" className="navbar__logo">
-          <img src="/images/logo.png" alt="Leslie Soriano - Servicios Legales" className="navbar__logo-img" />
+          <span className="navbar__logo-name">LESLIE SORIANO</span>
+          <span className="navbar__logo-sub">Servicios Legales &middot; Inmobiliaria</span>
         </a>
 
         <ul className="navbar__links">
