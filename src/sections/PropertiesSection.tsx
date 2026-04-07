@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { properties } from '../data/properties';
 import RevealText from '../components/RevealText';
 import MagneticButton from '../components/MagneticButton';
@@ -65,16 +66,14 @@ export default function PropertiesSection() {
                 <span className="property-card__badge">
                   {property.type === 'venta' ? 'En Venta' : 'En Alquiler'}
                 </span>
-                <a
-                  href={`https://wa.me/18298465843?text=Hola%20Lic.%20Leslie%2C%20me%20interesa%20la%20propiedad%20en%20${encodeURIComponent(property.location)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to={`/propiedad/${property.id}`}
                   className="property-card__overlay"
                 >
                   <span className="property-card__overlay-btn">
-                    Ver m&aacute;s &rarr;
+                    Ver detalles &rarr;
                   </span>
-                </a>
+                </Link>
               </div>
               <div className="property-card__info">
                 <div className="property-card__location">{property.location}</div>

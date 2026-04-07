@@ -171,6 +171,26 @@ export default function ContactSection() {
             </MagneticButton>
           </motion.div>
         </div>
+
+        {/* Google Maps */}
+        <motion.div
+          className="contact__map"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <iframe
+            title="Ubicaci\u00F3n SLS"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.5!2d-69.85!3d18.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSanto+Domingo+Este!5e0!3m2!1ses!2sdo!4v1"
+            width="100%"
+            height="400"
+            style={{ border: 0, borderRadius: '12px' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </motion.div>
       </div>
     </section>
   );
